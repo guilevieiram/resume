@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Guile's</title>
+
+
 </head>
 <body>
     <!-- Header -->
@@ -12,7 +15,7 @@
         <tbody>
             <tr>
                 <td>
-                    <img src="profile_zap.jpeg" alt="Profile picture">
+                    <img class="circular" src="/../images/profile_zap.jpeg" alt="Profile picture">
                 </td>
                 <td>       
                     <!-- Main info -->
@@ -26,27 +29,28 @@
         </tbody>
     </table>
 
-    <hr>
+    <hr class="bigHorizontalSeparator">
 
     <!--Education info -->
     <h3>Education:</h3>
-    <ul>
-        <li><a href="https://www.polytechnique.edu/en">École Polytechnique de Paris</a> (2020-2025)</li>
-        <li><a href="http://www.ita.br/">Aeronautical Institute of Technology</a> (2019-2020)</li>
-    </ul>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>(2020-2025)</td><td><a href="https://www.polytechnique.edu/en">École Polytechnique de Paris</a></td>
+            </tr>
+            <tr>
+                <td>(2019-2020)</td><td><a href="http://www.ita.br/">Aeronautical Institute of Technology</a></td>
+            </tr>
+        </tbody>
+    </table>
+
 
     <hr>
 
     <!-- Work experience -->
     <h3>Professional experiences</h3>
     <table>
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Location</th>
-                <th>Position</th>
-            </tr>
-        </thead>
         <tbody>
             <tr>
                 <td>2021 (jan-jul)</td>
@@ -103,6 +107,8 @@
         </tbody>
     </table>
 
+    <hr>
+
     <!-- Languages -->
     <h3>Languages</h3>
     <ol>
@@ -113,8 +119,12 @@
 
     <hr>
 
-    <h3><a href="hobbies.html">Hobbies</a></h3>
-
-
+    <h3>Hobbies</h3>
+        <ul>
+            <li>Karate</li>
+            <li>Cooking</li>
+            <li>Music</li>
+        </ul>
+    <script src="../scripts/index.js"></script>
 </body>
 </html>
