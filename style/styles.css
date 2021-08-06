@@ -1,0 +1,276 @@
+/* constants */
+:root {
+    --color-background: #171717;
+    --color-background-2: #18132e9a;
+    --color-front: #EDEDED;
+    --color-highlight: #18bee4;
+    --color-highlight-2: #0067ddfd;
+    --color-highlight-darker: #097186;
+}
+
+
+/* General settings */
+* {
+    font-family: 'Montserrat', 'Trebuchet MS', sans-serif; 
+    color: var(--color-front);
+}
+
+/* Tag selectors */
+html {
+    height: auto;
+}
+body{
+    background-color: var(--color-background);
+    margin: 0;
+    text-align: center;
+}
+hr{
+    border-color: var(--color-highlight);
+    border-style: none;
+    border-top-style: dotted;
+    border-top-width: 5px;
+    width: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+h1 {
+    color: var(--color-highlight);
+    font-weight: bold;
+    font-size: 3rem;
+}
+h2 {
+    color: var(--color-highlight);
+    font-size: 2rem;
+
+}
+h3 {
+    color: var(--color-highlight);
+}
+a:hover {
+    color: var(--color-highlight-2);
+}
+table{
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+    text-align: center;
+    width: 100%;
+}
+footer p {
+    font-size: 0.8rem;
+}
+/* Class selectors */
+.mainSize {
+    width: 80%;
+    max-width: 40rem;
+    margin: auto;
+}
+.circular {
+    border-radius: 100%;
+}
+.bigHorizontalSeparator {
+    width: 80%;
+}
+.introductionHeader {
+    text-align: left;
+    margin: 8rem auto 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.introductionHeader img {
+    grid-column: 1;
+    margin-right: 1rem;  
+    height: 10rem;
+    width: 10rem;
+}
+.paragraphBox {
+    border-radius: 2%;
+    text-align: center;
+    margin: auto 10%;
+}
+.middleImage {
+    text-align: center;
+}
+.backgroundImage {
+    background-image: url("../images/island.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.backgroundGradient {
+    background-image: linear-gradient(to bottom right,var(--color-highlight-darker),var(--color-background));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.inline {
+    text-align: left;
+    padding-left: 5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.skillsCol {
+    text-align:right;
+    line-height: 1.375rem;
+}
+.pointsCol {
+    text-align: left;
+
+}
+.foot {
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-top: 5%;
+    background-color: var(--color-background);
+}
+.foot img {
+    margin: 10px;
+}
+.textBox {
+    text-align: center;
+}
+.textBox li {
+    text-align: left;
+}
+.float {
+    float: left;
+}
+.contactButton {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-background);
+    background: linear-gradient(to right bottom,var(--color-highlight),var(--color-highlight-darker));
+    background-color: var(--color-highlight);
+    border-radius: 2rem;
+    display: inline-block;
+    border: none;
+    padding: 1rem 3rem;
+    transition: 600ms;
+}
+.contactButton:hover{
+    background: var(--color-highlight);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.contactButton:active {
+    transform: scale(0.9, 0.9);
+}
+.imageParagraphBox {
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+.imageParagraphBox img{
+    grid-column: 1;
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    margin-right: 5%;
+}   
+.imageParagraphBox p {
+    margin: 0.5rem;
+}
+.fitWidth {
+    width: 80%;
+}
+.rightContent{
+    grid-column: 2;
+}
+.leftContent {
+    grid-column: 1;
+}
+.skills {
+    margin: 4rem auto;
+}
+.skillsTable {
+    margin: 0;
+    display: grid;
+    width: 20rem;
+    grid-template-columns: 10rem 1fr;
+    grid-auto-rows: 1.5rem;
+    align-items: center;
+    justify-items: start;
+    column-gap: 10%;
+}
+.skillsTable p {
+    margin: 0;
+    height: 1rem;
+}
+.gridParagraph {
+    width: 100%;
+    margin: 4rem auto;
+    word-wrap: break-word;
+    text-align: left;
+    display: grid;
+    column-gap: 1rem;
+    justify-content: start;
+    align-items: middle;
+}
+.gridParagraph hr{
+    grid-column: 1 / span 2;
+    border-top-style:solid;
+    border-top-width: 2px;
+    width: 30%;
+}
+.flexParagraph {
+    width: 100%;
+    margin: 4rem auto;
+    word-wrap: break-word;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+/* navbar */
+.navBar {
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.navBar a{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+.navBar img {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+}
+.navBar p {
+    display: block;
+    text-align: center;
+    float: left;
+    padding: 0 1rem;
+    margin: 0;
+    text-decoration: none;
+}
+.navBar a:hover {
+    background-color: var(--color-highlight-darker);
+    color: black;
+}
+.accessLinks {
+    display: flex;
+    justify-content: flex-end;
+}
+.iconLinks {
+    display: flex;
+    justify-content: flex-start;
+}
+/* ID selectors */
